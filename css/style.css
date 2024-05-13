@@ -97,6 +97,7 @@ img {
 
 article {
     display: flex;
+    justify-content: center;
 }
 
 .articlePrincipal {
