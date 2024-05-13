@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Accessible</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Web Page with ARIA Accessibility">
+	<meta name="keywords" content="HTML, CSS, Accessibility">
+	<meta name="author" content="Borja Montseny">
+	<link
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♿</text></svg>"
+		rel="icon">
+	<link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav aria-label="Main Navigation" role="navigation">
+		<div id="panellSuperior">
+			<ul>
+				<li><a href="#" aria-current="page">Inici</a></li>
+				<li><a href="features.html">Característiques</a></li>
+				<li><a href="pricing.html">Preus</a></li>
+				<li><a href="about.html">Sobre nosaltres</a></li>
+				<li><a href="contact.html">Contacta'ns</a></li>
+			</ul>
+			<form role="search">
+				<label for="search">
+					<input tabindex="0" type="text" id="search" name="search" placeholder="Search">
+					<button type="submit">Search</button>
+				</label>
+			</form>
+		</div>
+	</nav>
+
+	<header role="banner">
+		<h1 tabindex="0" id="titolPrincipal">Article title</h1>
+	</header>
+
+	<section>
+		<article class="articlePrincipal" aria-label="Article Principal">
+			<p tabindex="0" id="text1">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+				et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+				aliquip
+				ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+				dolore eu
+				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt
+				mollit anim id est laborum.
+			</p>
+		</article>
+		<article aria-labelledby="segonBloc">
+			<div>
+				<h2 tabindex="0" id="segonBloc">Article subtitle #1</h2>
+				<p tabindex="0" id="text2">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+					dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+					deserunt
+					mollit anim id est laborum.
+				</p>
+			</div>
+			<img aria-labelledby="imatgeSegonBloc" tabindex="0" id="imatgeDreta" src="./img/cases.webp"
+				alt="Conjunt de cases blanques amb teulada negre">
+		</article>
+		<article aria-labelledby="tercerBloc">
+			<img aria-labelledby="imatgeTercerBloc" tabindex="0" id="imatgeEsquerra" src="./img/flors.webp"
+				alt="Flors en un fons desenfocat" width="245" height="auto">
+			<div>
+				<h2 tabindex="0" id="tercerBloc">Article subtitle #2</h2>
+				<p tabindex="0" id="text3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+					dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+					deserunt
+					mollit anim id est laborum.
+				</p>
+			</div>
+		</article>
+	</section>
+	<footer role="contentinfo">
+		<p>Imatges de <a href="https://unsplash.com/es/@syrhu">Syrhu</a>, sota la llicència d'ús <a
+				href="https://unsplash.com/es/licencia">Unsplash</a></p>
+	</footer>
+</body>
+
+</html>
